@@ -6,15 +6,11 @@
     <div class="cart-content">
       <h3>Client Cart</h3>
 
-      <cartItem
-        v-for="product of cart"
-        :key="product.sys.id"
-        v-bind:product_cart_data="product"
-      />
+      <cartItem v-for="product of cart" :key="product.sys.id" v-bind:product_cart_data="product" />
 
       <h3>
         Total cost:
-        <span>{{ total }} 0$</span>
+        <span>{{ total }} $</span>
       </h3>
     </div>
   </div>
